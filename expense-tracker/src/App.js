@@ -22,7 +22,7 @@ function App() {
       id: "e4",
       title: "Cinepolis",
       amount: 450.43,
-      date: new Date(2021, 5, 12),
+      date: new Date(2021, 1, 8),
     },
   ];
   return (
