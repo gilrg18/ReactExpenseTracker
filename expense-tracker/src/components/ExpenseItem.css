@@ -30,11 +30,15 @@
 .expense-item__price {
   font-size: 1rem;
   font-weight: bold;
-  color: white;
-  background-color: #40005d;
+  color: rgb(255, 255, 255);
+  background-color: #19a036;
   border: 1px solid white;
   padding: 0.5rem;
   border-radius: 12px;
+}
+
+.expense-item__price:hover{
+    background-color: #01fc38;
 }
 
 @media (min-width: 580px) {

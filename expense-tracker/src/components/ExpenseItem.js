@@ -9,12 +9,16 @@ return <div>Date</div>
     You can enclose it all in a single div
 */
 function ExpenseItem(){
+    //regular javascript date 2021 june 24
+    const expenseDate = new Date(2021, 5, 24);
+    const expenseTitle = 'Puro Pollo';
+    const expenseAmount = 120.25;
     return (
       <div className="expense-item">
-        <div>June 24th 2021</div>
+        <div>{expenseDate.toISOString()}</div>
         <div className="expense-item__description">
-          <h2>Puro Pollo</h2>
-          <div className="expense-item__price">$120.25</div>
+          <h2>{expenseTitle}</h2>
+          <div className="expense-item__price">${expenseAmount}</div>
         </div>
       </div>
     );
