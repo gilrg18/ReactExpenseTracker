@@ -1,3 +1,5 @@
+//Import ExpenseItem.css to use its css classes
+import './ExpenseItem.css';
 //A component in react is just a JavaScript function
 //You can only have 1 root element per return statement or per jsx code snippet
 /* This is not allowed!
@@ -8,15 +10,14 @@ return <div>Date</div>
 */
 function ExpenseItem(){
     return (
-      <div>
+      <div className="expense-item">
         <div>June 24th 2021</div>
-        <div>
+        <div className="expense-item__description">
           <h2>Puro Pollo</h2>
-          <div>$120</div>
+          <div className="expense-item__price">$120.25</div>
         </div>
       </div>
     );
-    
 }
 
 //To use a component we need to export it (Use App.js)
