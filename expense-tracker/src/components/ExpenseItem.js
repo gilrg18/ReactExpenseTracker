@@ -8,11 +8,12 @@ return <div>Date</div>
     </div>
     You can enclose it all in a single div
 */
-function ExpenseItem(){
-    //regular javascript date 2021 june 24
-    const expenseDate = new Date(2021, 5, 24);
-    const expenseTitle = 'Puro Pollo';
-    const expenseAmount = 120.25;
+//props (properties) (attributes)
+function ExpenseItem(props){
+    //regular javascript 
+    const expenseDate = props.date;
+    const expenseTitle = props.title;
+    const expenseAmount = props.amount;
     return (
       <div className="expense-item">
         <div>{expenseDate.toISOString()}</div>
