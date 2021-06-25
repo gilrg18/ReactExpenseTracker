@@ -1,6 +1,7 @@
 //Import ExpenseItem.css to use its css classes
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
+import Card from "./Card";
 //A component in react is just a JavaScript function
 //You can only have 1 root element per return statement or per jsx code snippet
 /* This is not allowed!
@@ -15,13 +16,13 @@ function ExpenseItem(props) {
   const expenseTitle = props.title;
   const expenseAmount = props.amount;
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
         <ExpenseDate date ={props.date}/>
       <div className="expense-item__description">
         <h2>{expenseTitle}</h2>
         <div className="expense-item__price">${expenseAmount}</div>
       </div>
-    </div>
+    </Card>
   );
 }
 
