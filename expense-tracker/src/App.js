@@ -1,3 +1,4 @@
+import React from "react";
 //To use our ExpenseItem REACT component in the components folder
 import ExpenseList from "./components/ExpenseList";
 
@@ -9,10 +10,15 @@ function App() {
     {
       id: "e1",
       title: "Puro Pollo",
-      amount: 124.50,
+      amount: 124.5,
       date: new Date(2021, 5, 24),
     },
-    { id: "e2", title: "Despensa", amount: 799.49, date: new Date(2021, 2, 12) },
+    {
+      id: "e2",
+      title: "Despensa",
+      amount: 799.49,
+      date: new Date(2021, 2, 12),
+    },
     {
       id: "e3",
       title: "Cable Hdmi",
@@ -26,12 +32,23 @@ function App() {
       date: new Date(2021, 1, 8),
     },
   ];
-  return (
-    <div>
-      <h2>Let's get started!</h2>
-      <ExpenseList expenseList={expenses} />
-    </div>
+  //3 parameters
+  //1 element that will be created
+  //2 object that configures the first element
+  //3 content between the first element div tags
+  return React.createElement(
+    'div',
+    {},
+    React.createElement('h2', {}, "Expense Tracker"),
+    React.createElement(ExpenseList, {expenseList: expenses})
   );
+
+  // return (
+  //   <div>
+  //     <h2>Expense Tracker</h2>
+  //     <ExpenseList expenseList={expenses} />
+  //   </div>
+  // );
 }
 
 export default App;
