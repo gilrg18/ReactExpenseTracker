@@ -2,7 +2,7 @@ import React from "react";
 //Import ExpenseItem.css to use its css classes
 import "./ExpenseItem.css";
 import ExpenseDate from "./ExpenseDate";
-import Card from "./Card";
+import Card from "../UI/Card";
 //A component in react is just a JavaScript function
 //You can only have 1 root element per return statement or per jsx code snippet
 /* This is not allowed!

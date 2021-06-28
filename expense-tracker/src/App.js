@@ -1,6 +1,6 @@
 import React from "react";
 //To use our ExpenseItem REACT component in the components folder
-import ExpenseList from "./components/ExpenseList";
+import ExpenseList from "./components/Expenses/ExpenseList";
 
 //1 file per component
 //App will be my ROOT component
