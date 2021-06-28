@@ -14,6 +14,11 @@ return <div>Date</div>
 //props (properties) (attributes)
 const ExpenseItem = (props) => {
   //regular javascript
+
+  //function clickHandler(){}
+  const clickHandler = () => {
+    console.log('clicked!!');
+  }
   const expenseTitle = props.title;
   const expenseAmount = props.amount;
   return (
@@ -23,6 +28,7 @@ const ExpenseItem = (props) => {
         <h2>{expenseTitle}</h2>
         <div className="expense-item__price">${expenseAmount}</div>
       </div>
+      <button onClick={clickHandler}>Change Title</button>
     </Card>
   );
 }
