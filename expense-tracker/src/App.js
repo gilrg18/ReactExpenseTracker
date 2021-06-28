@@ -4,7 +4,7 @@ import ExpenseList from "./components/Expenses/ExpenseList";
 
 //1 file per component
 //App will be my ROOT component
-function App() {
+const App = () => {
   //props (properties)
   const expenses = [
     {

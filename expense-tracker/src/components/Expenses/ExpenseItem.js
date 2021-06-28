@@ -12,7 +12,7 @@ return <div>Date</div>
     You can enclose it all in a single div
 */
 //props (properties) (attributes)
-function ExpenseItem(props) {
+const ExpenseItem = (props) => {
   //regular javascript
   const expenseTitle = props.title;
   const expenseAmount = props.amount;
